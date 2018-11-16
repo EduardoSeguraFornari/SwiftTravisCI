@@ -8,6 +8,7 @@
 
 import XCTest
 
+@testable import SwiftTravisCI
 class SwiftTravisCITests: XCTestCase {
 
     override func setUp() {
