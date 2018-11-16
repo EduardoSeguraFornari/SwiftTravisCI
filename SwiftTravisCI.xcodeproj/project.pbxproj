@@ -12,7 +12,18 @@
 		7E6D4A1A219EFA5C005CE53E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6D4A18219EFA5C005CE53E /* Main.storyboard */; };
 		7E6D4A1C219EFA5C005CE53E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6D4A1B219EFA5C005CE53E /* Assets.xcassets */; };
 		7E6D4A1F219EFA5C005CE53E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6D4A1D219EFA5C005CE53E /* LaunchScreen.storyboard */; };
+		91A09178219F1D9B004DF5EF /* SwiftTravisCITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A09177219F1D9B004DF5EF /* SwiftTravisCITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91A0917A219F1D9B004DF5EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E6D4A09219EFA5C005CE53E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E6D4A10219EFA5C005CE53E;
+			remoteInfo = SwiftTravisCI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7E6D4A11219EFA5C005CE53E /* SwiftTravisCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTravisCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		7E6D4A1B219EFA5C005CE53E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E6D4A1E219EFA5C005CE53E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E6D4A20219EFA5C005CE53E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91A09175219F1D9B004DF5EF /* SwiftTravisCITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTravisCITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91A09177219F1D9B004DF5EF /* SwiftTravisCITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTravisCITests.swift; sourceTree = "<group>"; };
+		91A09179219F1D9B004DF5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7E6D4A0E219EFA5C005CE53E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91A09172219F1D9B004DF5EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				7E6D4A13219EFA5C005CE53E /* SwiftTravisCI */,
+				91A09176219F1D9B004DF5EF /* SwiftTravisCITests */,
 				7E6D4A12219EFA5C005CE53E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				7E6D4A11219EFA5C005CE53E /* SwiftTravisCI.app */,
+				91A09175219F1D9B004DF5EF /* SwiftTravisCITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				7E6D4A20219EFA5C005CE53E /* Info.plist */,
 			);
 			path = SwiftTravisCI;
+			sourceTree = "<group>";
+		};
+		91A09176219F1D9B004DF5EF /* SwiftTravisCITests */ = {
+			isa = PBXGroup;
+			children = (
+				91A09177219F1D9B004DF5EF /* SwiftTravisCITests.swift */,
+				91A09179219F1D9B004DF5EF /* Info.plist */,
+			);
+			path = SwiftTravisCITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +116,24 @@
 			productReference = 7E6D4A11219EFA5C005CE53E /* SwiftTravisCI.app */;
 			productType = "com.apple.product-type.application";
 		};
+		91A09174219F1D9B004DF5EF /* SwiftTravisCITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91A0917E219F1D9B004DF5EF /* Build configuration list for PBXNativeTarget "SwiftTravisCITests" */;
+			buildPhases = (
+				91A09171219F1D9B004DF5EF /* Sources */,
+				91A09172219F1D9B004DF5EF /* Frameworks */,
+				91A09173219F1D9B004DF5EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91A0917B219F1D9B004DF5EF /* PBXTargetDependency */,
+			);
+			name = SwiftTravisCITests;
+			productName = SwiftTravisCITests;
+			productReference = 91A09175219F1D9B004DF5EF /* SwiftTravisCITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +146,10 @@
 				TargetAttributes = {
 					7E6D4A10219EFA5C005CE53E = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					91A09174219F1D9B004DF5EF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7E6D4A10219EFA5C005CE53E;
 					};
 				};
 			};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				7E6D4A10219EFA5C005CE53E /* SwiftTravisCI */,
+				91A09174219F1D9B004DF5EF /* SwiftTravisCITests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		91A09173219F1D9B004DF5EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		91A09171219F1D9B004DF5EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91A09178219F1D9B004DF5EF /* SwiftTravisCITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91A0917B219F1D9B004DF5EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E6D4A10219EFA5C005CE53E /* SwiftTravisCI */;
+			targetProxy = 91A0917A219F1D9B004DF5EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7E6D4A18219EFA5C005CE53E /* Main.storyboard */ = {
@@ -312,6 +390,44 @@
 			};
 			name = Release;
 		};
+		91A0917C219F1D9B004DF5EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftTravisCITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Test.SwiftTravisCITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftTravisCI.app/SwiftTravisCI";
+			};
+			name = Debug;
+		};
+		91A0917D219F1D9B004DF5EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftTravisCITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Test.SwiftTravisCITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftTravisCI.app/SwiftTravisCI";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +445,15 @@
 			buildConfigurations = (
 				7E6D4A24219EFA5D005CE53E /* Debug */,
 				7E6D4A25219EFA5D005CE53E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91A0917E219F1D9B004DF5EF /* Build configuration list for PBXNativeTarget "SwiftTravisCITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91A0917C219F1D9B004DF5EF /* Debug */,
+				91A0917D219F1D9B004DF5EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,5 +1,6 @@
 # This is a comment
-language: swift
+language: objective-c
+osx_image: xcode10.1
 xcode_project: SwiftTravisCI.xcodeproj
 xcode_scheme: SwiftTravisCI
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone XS
